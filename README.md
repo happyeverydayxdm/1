@@ -297,3 +297,30 @@ int main()
 }
 //不可在for内部修改变量，防止for失去控制；
 //建议for语句循环变量取值采用前开后闭的用法
+int main()
+{
+	int i = 0;
+	do
+	
+	{
+		printf("%d ", i);
+	    i++;
+     }
+	while (i <= 10);
+
+
+	return 0;
+}
+int main()
+{
+	int i = 0;
+	int n = 0;
+	int ret = 1;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++)
+	{
+		ret = ret * i;
+	}
+	printf("%d\n", ret);
+    return 0;
+}
