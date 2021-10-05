@@ -391,3 +391,27 @@ int main()
 	return 0;
 }
 //cls清空屏幕
+int main()
+{
+	int i = 0;
+	char password[20] = { 0 };
+	printf("钟棂献喜欢谁,欸嘿嘿\n");
+	printf("提示：姓为钟\n");
+	for (i = 0; i < 3; i++)
+	{
+		
+		scanf("%s\n", password);
+		if (strcmp(password, "钟离")==0)
+		{
+			printf("恭喜，回答正确");
+			break;
+		}
+		else
+		{
+			printf("密码错误\n");
+		}
+	}
+	if (i == 3)
+		printf("很遗憾，闯关失败bushi\n");
+	return 0;
+}
