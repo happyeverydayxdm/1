@@ -471,3 +471,17 @@ int main()
 	printf("%d\n", n);
 	return 0;
 }
+int main()
+{
+	
+	int i = 0;
+	for (i = 1000; i < 2001; i++)
+	{
+		if (i % 4 == 0)
+		{
+			printf("%d\n", i);
+		}
+	}
+	return 0;
+}
+//题目，求1000到2000的闰年
