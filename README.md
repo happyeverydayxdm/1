@@ -458,3 +458,16 @@ int main()
 	}
 	return 0;
 }
+int main()
+{
+	int r = 0;
+	int m = 57;
+	int n = 18;
+	while (r = m % n)
+	{
+		m = n;
+		n = r;
+	}
+	printf("%d\n", n);
+	return 0;
+}
