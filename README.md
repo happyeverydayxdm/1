@@ -667,3 +667,20 @@ int main()
 	}
 	return 0;
 }
+void swap(int* pa, int* pb)
+{
+	int tmp = 0;
+	tmp = *pa;
+	*pa = *pb;
+	*pb = tmp;
+
+}
+int main()
+{
+	int a = 20;
+	int b = 40;
+	printf("%d %d\n", a, b);
+	swap(&a, &b);
+	printf("%d %d\n", a, b);
+	return 0;
+}
