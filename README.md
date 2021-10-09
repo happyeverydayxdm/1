@@ -700,3 +700,29 @@ int main()
 
 	return 0;
 }
+int sad(int x)
+{
+	if (x == 1)
+		return 1;
+	else
+		return x * sad(x - 1);
+}
+
+
+//int sad(int n)
+//{
+//	if (n != 1)
+//		return sad(n-1)*n;
+//	else
+//		return 1;
+//
+//}
+int main()
+{
+	int n = 0;
+	int ret = 0;
+	scanf("%d", &n);
+	ret = sad(n);
+	printf("%d ", ret);
+	return 0;
+}
