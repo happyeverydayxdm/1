@@ -684,3 +684,19 @@ int main()
 	printf("%d %d\n", a, b);
 	return 0;
 }
+int strlem(char* arr)
+{
+	if (*arr != '\0')
+	  return 1+strlem(arr + 1);
+	
+	else return 0;
+}
+int main()
+{
+	char arr[] = "bit22";
+	int len = strlem(arr);
+	printf("len = %d ", len);
+
+
+	return 0;
+}
